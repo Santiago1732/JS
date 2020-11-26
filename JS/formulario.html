@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type ="text/javascript" src="js/32-ejercicio-dom.js"></script>
+    <!-- <script type ="text/javascript" src="js/34-localstorage.js"></script> -->
+    <style>
+        .box{
+            width: 250px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+
+        .dashed{
+            border: 3px dashed red;
+        }
+    </style>
+
+</head>
+<body>
+
+        <!-- 1. Formulario de campos: Nombre, Apellido y edad --> 
+        <!-- 2. Boton de enviar el formulario: eventos submit -->
+        <!-- 3. Mostrar datos por pantalla -->
+        <!-- 4. Tener un botón que al darle click nos muestra los datos actuales del formulario  -->
+
+    <div class="box">
+        <form action="" method="POST" id="idFormulario" onsubmit="return false;">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name ="nombre" id="idNombre"/></br>
+        
+            <label for="apellido">Apellido: </label>
+            <input type="text" name ="apellido" id="idApellido"/></br>
+
+            <label for="edad">Edad: </label>
+            <input type="number" name ="edad" id="idEdad"/></br>
+
+            <input type="submit" value="enviar" id="idSubmit"/></br>
+        </form>
+    </div>
+
+    <div class ="box dashed">
+
+
+    </div>
+    
+</body>
+</html>
